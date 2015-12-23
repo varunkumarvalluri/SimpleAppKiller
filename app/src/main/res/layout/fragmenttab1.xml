@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ram_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/ram_button"
+            android:onClick="startKill"
+            android:shape="oval" />
+
+        <Button
+            android:id="@+id/network_btn"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/network_button"
+            android:onClick="startKill" />
+
+        <Button
+            android:id="@+id/ram_network_btn"
+            android:layout_width="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="@string/ram_network_button"
+            android:onClick="startKill"/>
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="@string/quit_button"
+            android:onClick="quitApp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
